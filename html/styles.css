@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://assets.onecompiler.app/4359nhtdt/4359gtmed/Screenshot_2025-01-06-20-32-11-36_99c04817c0de5652397fc8b56c3b3817%5B1%5D.jpg'); /* Set your background image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.calculator-container {
+  width: 360px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent background for the calculator */
+  background-image: url('https://assets.onecompiler.app/4359nhtdt/4359gtmed/Screenshot_2025-01-06-20-31-19-41_99c04817c0de5652397fc8b56c3b3817%5B1%5D.jpg'); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 10px;
+ 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.display input {
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  padding: 20px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.equal {
+   /* Neon pink for equal button */
+  color: #fff;
+  box-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493;
+  grid-column: span 4;
+}
+
+.equal:hover {
+  background-color: #e11b87;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Styling for the image button */
+.img-button {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.image-btn {
+  padding: 0; /* Remove padding to ensure image fits properly */
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.image-btn:hover {
+  opacity: 0.8;
+}
